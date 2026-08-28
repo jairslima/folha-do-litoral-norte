@@ -1,0 +1,34 @@
+{
+  "regioes": {
+    "beira_mar": { "nome": "Beira-Mar" },
+    "encosta_serra": { "nome": "Encosta e Serra" },
+    "lagoas_planicie": { "nome": "Lagoas e Planície" }
+  },
+  "cidades": [
+    { "nome": "Capão da Canoa", "slug": "capao-da-canoa", "regiao": "beira_mar", "ibge": 4304630 },
+    { "nome": "Tramandaí", "slug": "tramandai", "regiao": "beira_mar", "ibge": 4321600 },
+    { "nome": "Torres", "slug": "torres", "regiao": "beira_mar", "ibge": 4321501 },
+    { "nome": "Imbé", "slug": "imbe", "regiao": "beira_mar", "ibge": 4310330 },
+    { "nome": "Cidreira", "slug": "cidreira", "regiao": "beira_mar", "ibge": 4305454 },
+    { "nome": "Xangri-lá", "slug": "xangri-la", "regiao": "beira_mar", "ibge": 4323804 },
+    { "nome": "Balneário Pinhal", "slug": "balneario-pinhal", "regiao": "beira_mar", "ibge": 4301636 },
+    { "nome": "Arroio do Sal", "slug": "arroio-do-sal", "regiao": "beira_mar", "ibge": 4301057 },
+
+    { "nome": "Osório", "slug": "osorio", "regiao": "encosta_serra", "ibge": 4313508 },
+    { "nome": "Santo Antônio da Patrulha", "slug": "santo-antonio-da-patrulha", "regiao": "encosta_serra", "ibge": 4317608 },
+    { "nome": "Três Cachoeiras", "slug": "tres-cachoeiras", "regiao": "encosta_serra", "ibge": 4321667 },
+    { "nome": "Terra de Areia", "slug": "terra-de-areia", "regiao": "encosta_serra", "ibge": 4321436 },
+    { "nome": "Maquiné", "slug": "maquine", "regiao": "encosta_serra", "ibge": 4311775 },
+    { "nome": "Caraá", "slug": "caraa", "regiao": "encosta_serra", "ibge": 4304713 },
+    { "nome": "Mampituba", "slug": "mampituba", "regiao": "encosta_serra", "ibge": 4311734 },
+    { "nome": "Morrinhos do Sul", "slug": "morrinhos-do-sul", "regiao": "encosta_serra", "ibge": 4312443 },
+    { "nome": "Três Forquilhas", "slug": "tres-forquilhas", "regiao": "encosta_serra", "ibge": 4321832 },
+    { "nome": "Itati", "slug": "itati", "regiao": "encosta_serra", "ibge": 4310652 },
+    { "nome": "Dom Pedro de Alcântara", "slug": "dom-pedro-de-alcantara", "regiao": "encosta_serra", "ibge": 4306551 },
+
+    { "nome": "Palmares do Sul", "slug": "palmares-do-sul", "regiao": "lagoas_planicie", "ibge": 4313656 },
+    { "nome": "Mostardas", "slug": "mostardas", "regiao": "lagoas_planicie", "ibge": 4312500 },
+    { "nome": "Tavares", "slug": "tavares", "regiao": "lagoas_planicie", "ibge": 4321352 },
+    { "nome": "Capivari do Sul", "slug": "capivari-do-sul", "regiao": "lagoas_planicie", "ibge": 4304671 }
+  ]
+}

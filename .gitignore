@@ -1,0 +1,15 @@
+.next/
+node_modules/
+.env.local
+.env
+*.log
+
+.vercel
+.env.*
+*.key
+secrets.*
+*.pkl
+*.pem
+credentials.*
+*.p12
+*.pfx

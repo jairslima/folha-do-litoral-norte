@@ -1,0 +1,65 @@
+'use client'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { CIDADES, REGIOES, regiaoParaSlug } from '@/lib/cidades'
+
+export default function CityNav() {
+  const pathname = usePathname()
+
+  const cidadeAtiva = pathname.startsWith('/cidade/')
+    ? pathname.split('/cidade/')[1]
+    : null
+  const regiaoAtiva = pathname.startsWith('/regiao/')
+    ? pathname.split('/regiao/')[1]
+    : null
+  const naHome = pathname === '/'
+
+  return (
+    <nav className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-10">
+      <div className="max-w-7xl mx-auto px-4 py-2 space-y-1.5">
+        {REGIOES.map((regiao, i) => {
+          const slugVale = regiaoParaSlug(regiao)
+          return (
+            <div key={regiao} className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
+              {i === 0 && (
+                <Link
+                  href="/"
+                  className={`flex-shrink-0 px-3 py-1.5 rounded text-sm font-medium transition-colors ${
+                    naHome
+                      ? 'bg-azul text-white'
+                      : 'text-gray-600 hover:text-azul hover:bg-gray-100'
+                  }`}
+                >
+                  Todas
+                </Link>
+              )}
+              <Link
+                href={`/regiao/${slugVale}`}
+                className={`text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded flex-shrink-0 transition-colors ${
+                  regiaoAtiva === slugVale
+                    ? 'bg-azul text-white'
+                    : 'text-dourado hover:bg-gray-100'
+                }`}
+              >
+                {regiao}
+              </Link>
+              {CIDADES.filter(c => c.regiao === slugVale).map(cidade => (
+                <Link
+                  key={cidade.slug}
+                  href={`/cidade/${cidade.slug}`}
+                  className={`flex-shrink-0 px-3 py-1.5 rounded text-sm transition-colors ${
+                    cidadeAtiva === cidade.slug
+                      ? 'bg-azul text-white'
+                      : 'text-gray-600 hover:text-azul hover:bg-gray-100'
+                  }`}
+                >
+                  {cidade.nome}
+                </Link>
+              ))}
+            </div>
+          )
+        })}
+      </div>
+    </nav>
+  )
+}
