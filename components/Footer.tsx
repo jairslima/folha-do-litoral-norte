@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-azul-escuro text-blue-200 mt-12">
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-serif text-white text-lg mb-2">{MARCA.nome}</h3>
             <p className="text-sm leading-relaxed">
@@ -43,6 +43,20 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-semibold mb-2 text-sm uppercase tracking-wide">Outra edição</h4>
+            <p className="text-sm leading-relaxed">
+              Também cobrimos o Vale do Paranhana, Vale dos Sinos e Vale das Hortências pela{' '}
+              <a
+                href="https://folhadosvales.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dourado-claro hover:text-white transition-colors underline"
+              >
+                Folha dos Vales
+              </a>.
+            </p>
           </div>
         </div>
         <div className="border-t border-blue-800 mt-6 pt-4 text-xs text-center text-blue-400">
