@@ -59,8 +59,9 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="border-t border-blue-800 mt-6 pt-4 text-xs text-center text-blue-400">
-          © {new Date().getFullYear()} {MARCA.nome} · {MARCA.cidadeBase} · Notícias locais do Litoral Norte
+        <div className="border-t border-blue-800 mt-6 pt-4 text-xs text-center text-blue-400 space-y-1">
+          <p>© {new Date().getFullYear()} {MARCA.nome} · {MARCA.cidadeBase} · Notícias locais do Litoral Norte</p>
+          <p>Jornalista Responsável: {MARCA.jornalistaResponsavel} — Registro Profissional MTE nº {MARCA.registroMTE}</p>
         </div>
       </div>
     </footer>

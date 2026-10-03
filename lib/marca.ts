@@ -6,4 +6,6 @@ export const MARCA = {
   email: 'afolhadosvales@gmail.com', // mesmo e-mail usado nas duas praças, a pedido do usuário (2026-08-28)
   facebookUrl: 'https://www.facebook.com/afolhadolitoralnorte',
   cidadeBase: 'Arroio do Sal, RS',
+  jornalistaResponsavel: 'Jair da Silva Lima',
+  registroMTE: '0024314/RS',
 }
