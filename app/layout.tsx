@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Script from 'next/script'
 import Header from '@/components/Header'
 import CityNav from '@/components/CityNav'
 import Footer from '@/components/Footer'
@@ -30,6 +31,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          strategy="afterInteractive"
+          data-cf-beacon='{"token": "6b53180d32064de083fe6a65e54b38de"}'
+        />
       </body>
     </html>
   )
