@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Visitas from '@/components/Visitas'
 import { MARCA } from '@/lib/marca'
 import { REGIOES } from '@/lib/cidades'
 
@@ -62,6 +63,7 @@ export default function Footer() {
         <div className="border-t border-blue-800 mt-6 pt-4 text-xs text-center text-blue-400 space-y-1">
           <p>© {new Date().getFullYear()} {MARCA.nome} · {MARCA.cidadeBase} · Notícias locais do Litoral Norte</p>
           <p>Jornalista Responsável: {MARCA.jornalistaResponsavel} — Registro Profissional MTE nº {MARCA.registroMTE}</p>
+          <Visitas />
         </div>
       </div>
     </footer>
